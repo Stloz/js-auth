@@ -7,7 +7,7 @@ class Confirm {
   }
 
   static generateCode = () =>
-    Math.floor(Math.random() * 9000) + 1000
+    Math.floor(Math.random() * 9000) + 1000 // генерація рандомного 4-значного числа
 
   static create = (data) => {
     this.#list.push(new Confirm(data))
